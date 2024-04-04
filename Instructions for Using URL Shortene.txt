@@ -1,0 +1,30 @@
+Instructions for Using URL Shortener Application:
+
+1. Running the Application:
+   - Ensure you have Java and Maven installed on your system.
+   - Clone the repository from "https://github.com/mrraptor7579/UrlShortner_java".
+   - Navigate to the project directory in your terminal.
+   - Run the command: mvn spring-boot:run
+   - The application should now be running on http://localhost:7077.
+
+2. Shortening a URL:
+   - Open your web browser and navigate to http://localhost:7077/index.
+   - Enter the original URL you want to shorten in the provided field.
+   - Click the "Shorten URL" button.
+   - If the URL is successfully shortened, you will see the original and shortened URLs displayed on the page.
+
+3. Accessing Shortened URLs:
+   - To access a shortened URL, simply type http://localhost:7077/{shortenedURL} in your browser's address bar, where {shortenedURL} is the shortened version of the original URL.
+
+4. Error Handling:
+   - If you attempt to shorten a URL that has already been shortened, you will be redirected to an error page indicating the issue.
+   - If any other errors occur during the operation of the application, you will be directed to a generic error page.
+
+5. Customizing Error Pages:
+   - If you wish to customize the error pages, you can modify the HTML files located in the 'resources/templates' directory.
+   - Ensure that the error pages are styled appropriately and provide useful information to the user.
+
+6. Troubleshooting:
+   - If you encounter any issues while running the application, please refer to the project documentation or seek assistance from the project maintainers.
+
+7. Enjoy using the URL Shortener Application!
