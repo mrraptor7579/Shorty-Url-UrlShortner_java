@@ -51,12 +51,20 @@
                 id="originalURL"
                 th:field="*{originalURL}"
                 name="originalURL"
-                placeholder="Enter your long URL">
+                placeholder="Enter your long URL"><br>
+
         <br>
         <input type="submit" value="Shorten URL">
     </form>
-    <div style="display: inline-block;"><strong>ShortUrl:</strong></div>
-    <div style="display: inline-block;" th:text="${shortUrl}" class="short-url" id="shortURL"></div>
+    <label for="shortUrl"><strong>Short Url:</strong></label>
+    <input
+            type="text"
+            id="shortUrl"
+            th:value="${shortUrl}"
+            name="shortUrl"
+            readonly
+            placeholder="Short Url">
+
 </div>
 
 </body>
